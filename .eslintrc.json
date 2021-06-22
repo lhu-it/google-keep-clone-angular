@@ -3,6 +3,22 @@
   "ignorePatterns": [
     "projects/**/*"
   ],
+  "rules": {
+    "max-len": ["error", 100, {
+      "ignoreComments": true
+    }],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "linebreak-style": ["error", "unix"],
+    "brace-style": ["error", "1tbs"],
+    "eol-last": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "no-multiple-empty-lines": "error",
+    "no-multi-spaces": "error",
+    "comma-dangle": ["error", "never"]
+  },
   "overrides": [
     {
       "files": [
