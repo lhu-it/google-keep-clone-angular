@@ -1,0 +1,34 @@
+@use '../../styles/mixins';
+
+nav {
+  border-bottom: 1px solid #dadce0;
+  padding: 0.5rem;
+  @include mixins.flex();
+}
+
+.brand {
+  @include mixins.flex(false, true);
+  padding-right: 30px;
+  min-width: 232px;
+  box-sizing: border-box;
+}
+
+.menu-button {
+  margin: 0px 4px;
+}
+
+.title {
+  margin-left: 4px;
+  font-size: 22px;
+  color: #5f6368;
+}
+
+.actions {
+  @include mixins.flex(false, true);
+  margin-left: auto;
+  padding-right: 30px;
+}
+
+.apps {
+  @include mixins.flex(false, true);
+}

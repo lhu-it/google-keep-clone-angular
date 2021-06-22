@@ -1,0 +1,35 @@
+@use '../../styles/mixins';
+
+:host {
+  flex: 1;
+}
+
+div {
+  @include mixins.flex();
+  min-width: 0;
+  max-width: 720px;
+  border-radius: 8px;
+  margin: 0px 8px;
+  padding: 4px 0px;
+  background-color: #f1f3f4;
+}
+
+.active {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px #aaa;
+}
+
+input {
+  width: 100%;
+  padding: 11px 0px;
+  background-color: inherit;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+app-circle-button {
+  margin: 0px 8px;
+}

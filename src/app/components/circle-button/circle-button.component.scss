@@ -1,0 +1,38 @@
+@use '../../styles/mixins';
+
+.small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+button {
+  @include mixins.flex(true, true);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: inherit;
+  color: #5f6368;
+  width: 3rem;
+  height: 3rem;
+}
+
+button:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+button:active {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+
+span {
+  font-family: 'Material Icons';
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+img {
+  border-radius: 50%;
+}

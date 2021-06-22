@@ -1,0 +1,6 @@
+<div id="search" [class.active]="active">
+  <app-circle-button icon="search" [small]="true"></app-circle-button>
+  <input type="text" placeholder="Tìm kiếm"
+    (focus)="active = true" (blur)="active = false">
+  <app-circle-button icon="close" [small]="true"></app-circle-button>
+</div>
