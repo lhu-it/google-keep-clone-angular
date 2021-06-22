@@ -103,9 +103,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "google-keep-clone-angular"
+  "defaultProject": "google-keep-clone-angular",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
