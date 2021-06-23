@@ -1,6 +1,6 @@
 @use '../../styles/mixins';
 
-nav {
+#this {
   border-bottom: 1px solid #dadce0;
   padding: 0.5rem;
   @include mixins.flex();

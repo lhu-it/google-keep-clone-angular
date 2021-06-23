@@ -1,6 +1,8 @@
-<button [class.small]="small">
-  <span class="material-icons-outlined" *ngIf="mode === 'icon'">
+<button id="this" [class.small]="small">
+  <span class="icon material-icons-outlined"
+    *ngIf="mode === 'icon'">
     {{ icon }}
   </span>
-  <img *ngIf="mode === 'image'" [src]="imageUrl">
+  <img class="image"
+    *ngIf="mode === 'image'" [src]="imageUrl">
 </button>

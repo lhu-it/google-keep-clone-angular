@@ -1,2 +1,9 @@
-<app-navigation-bar></app-navigation-bar>
-<router-outlet></router-outlet>
+<div id="this">
+  <app-navigation-bar (changeMenu)="toggleMenu()"></app-navigation-bar>
+  <main class="main">
+    <app-side-bar [menuCollapsed]="menuCollapsed"></app-side-bar>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

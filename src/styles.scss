@@ -16,3 +16,9 @@ body {
 html, body, p, button, input, textarea, select {
   font-size: 16px;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

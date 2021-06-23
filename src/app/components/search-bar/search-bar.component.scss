@@ -2,11 +2,11 @@
 
 :host {
   flex: 1;
+  min-width: 0;
 }
 
-div {
+#this {
   @include mixins.flex();
-  min-width: 0;
   max-width: 720px;
   border-radius: 8px;
   margin: 0px 8px;
@@ -14,22 +14,22 @@ div {
   background-color: #f1f3f4;
 }
 
-.active {
+#this.active {
   background-color: #fff;
   box-shadow: 0px 1px 3px #aaa;
 }
 
-input {
+.search-box {
   width: 100%;
   padding: 11px 0px;
   background-color: inherit;
   border: none;
 }
 
-input:focus {
+.search-box:focus-visible {
   outline: none;
 }
 
-app-circle-button {
+.inline-button {
   margin: 0px 8px;
 }

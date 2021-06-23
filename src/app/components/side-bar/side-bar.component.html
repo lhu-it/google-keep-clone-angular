@@ -1,0 +1,20 @@
+<div id="this" [class.collapsed]="menuCollapsed">
+  <app-menu-item [collapsed]="menuCollapsed"
+    icon="lightbulb" text="Ghi chú" url="home">
+  </app-menu-item>
+  <app-menu-item [collapsed]="menuCollapsed"
+    icon="notifications" text="Lời nhắc" url="reminders">
+  </app-menu-item>
+  <app-menu-item [collapsed]="menuCollapsed"
+    icon="edit" text="Chỉnh sửa nhãn" url="edit">
+  </app-menu-item>
+  <app-menu-item [collapsed]="menuCollapsed"
+    icon="archive" text="Lưu trữ" url="archive">
+  </app-menu-item>
+  <app-menu-item [collapsed]="menuCollapsed"
+    icon="delete" text="Thùng rác" url="trash">
+  </app-menu-item>
+  <div class="bottom" *ngIf="!menuCollapsed">
+    <a href="#" target="_blank" rel="noopener">Giấy phép nguồn mở</a>
+  </div>
+</div>
