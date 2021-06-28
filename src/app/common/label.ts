@@ -1,4 +1,4 @@
-export interface Tag {
+export interface Label {
   name: string;
   slug: string;
 }

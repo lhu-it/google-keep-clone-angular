@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Tag } from '../common/tag';
+import { Label } from '../common/label';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TagService {
-  getTags(): Tag[] {
+export class LabelService {
+  getLabels(): Label[] {
     return [
       { name: 'code', slug: 'code' },
       { name: 'nhật-ký', slug: 'nhat-ky' },

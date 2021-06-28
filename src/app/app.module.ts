@@ -8,7 +8,12 @@ import { CircleButtonComponent } from './components/circle-button/circle-button.
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ReminderPageComponent } from './pages/reminder-page/reminder-page.component';
+import { ArchivePageComponent } from './pages/archive-page/archive-page.component';
+import { TrashPageComponent } from './pages/trash-page/trash-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { EditLabelComponent } from './components/edit-label/edit-label.component';
+import { LabelPageComponent } from './pages/label-page/label-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     SearchBarComponent,
     SideBarComponent,
     MenuItemComponent,
-    NotFoundComponent
+    ReminderPageComponent,
+    ArchivePageComponent,
+    TrashPageComponent,
+    HomePageComponent,
+    EditLabelComponent,
+    LabelPageComponent
   ],
   imports: [
     BrowserModule,

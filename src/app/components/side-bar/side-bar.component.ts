@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Tag } from 'src/app/common/tag';
-import { TagService } from 'src/app/services/tag.service';
+import { Label } from 'src/app/common/label';
+import { LabelService } from 'src/app/services/label.service';
 
 @Component({
   selector: 'app-side-bar',
@@ -10,11 +10,11 @@ import { TagService } from 'src/app/services/tag.service';
 export class SideBarComponent implements OnInit {
   @Input() menuCollapsed = false;
 
-  tags!: Tag[];
+  labels!: Label[];
 
-  constructor (private tagService: TagService) {}
+  constructor (private labelService: LabelService) {}
 
   ngOnInit() {
-    this.tags = this.tagService.getTags();
+    this.labels = this.labelService.getLabels();
   }
 }

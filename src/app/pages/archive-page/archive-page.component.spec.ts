@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NotFoundComponent } from './not-found.component';
+import { ArchivePageComponent } from './archive-page.component';
 
-describe('NotFoundComponent', () => {
-  let component: NotFoundComponent;
-  let fixture: ComponentFixture<NotFoundComponent>;
+describe('ArchivePageComponent', () => {
+  let component: ArchivePageComponent;
+  let fixture: ComponentFixture<ArchivePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NotFoundComponent]
+      declarations: [ArchivePageComponent]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NotFoundComponent);
+    fixture = TestBed.createComponent(ArchivePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

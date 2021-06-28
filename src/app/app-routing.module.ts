@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ArchivePageComponent } from './pages/archive-page/archive-page.component';
+import { EditLabelComponent } from './components/edit-label/edit-label.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LabelPageComponent } from './pages/label-page/label-page.component';
+import { ReminderPageComponent } from './pages/reminder-page/reminder-page.component';
+import { TrashPageComponent } from './pages/trash-page/trash-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: NotFoundComponent },
-  { path: 'reminders', component: NotFoundComponent },
-  { path: 'label/:slug', component: NotFoundComponent },
-  { path: 'edit', component: NotFoundComponent },
-  { path: 'archive', component: NotFoundComponent },
-  { path: 'trash', component: NotFoundComponent }
+  { path: 'home', component: HomePageComponent },
+  { path: 'reminders', component: ReminderPageComponent },
+  { path: 'label/:slug', component: LabelPageComponent },
+  { path: 'archive', component: ArchivePageComponent },
+  { path: 'trash', component: TrashPageComponent }
 ];
 
 @NgModule({
