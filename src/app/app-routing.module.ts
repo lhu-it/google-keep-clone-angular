@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: NotFoundComponent },
   { path: 'reminders', component: NotFoundComponent },
+  { path: 'label/:slug', component: NotFoundComponent },
   { path: 'edit', component: NotFoundComponent },
   { path: 'archive', component: NotFoundComponent },
   { path: 'trash', component: NotFoundComponent }

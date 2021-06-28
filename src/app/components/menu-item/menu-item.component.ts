@@ -9,5 +9,5 @@ export class MenuItemComponent {
   @Input() icon = '';
   @Input() text = '';
   @Input() collapsed = false;
-  @Input() url = '#';
+  @Input() url = '';
 }
