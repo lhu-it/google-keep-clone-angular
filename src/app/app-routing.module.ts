@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'reminders', component: ReminderPageComponent },
   { path: 'label/:slug', component: LabelPageComponent },
+  { path: 'edit', component: EditLabelComponent },
   { path: 'archive', component: ArchivePageComponent },
   { path: 'trash', component: TrashPageComponent }
 ];
