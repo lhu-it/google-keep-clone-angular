@@ -1,6 +1,6 @@
 @use '../../styles/mixins';
 
-#this {
+.this {
   @include mixins.flex(true, true);
   cursor: pointer;
   border: 1px solid transparent;
@@ -10,20 +10,20 @@
   height: 3rem;
 }
 
-#this.small {
+.this.small {
   width: 2.5rem;
   height: 2.5rem;
 }
 
-#this:hover {
+.this:hover {
   background-color: rgba(60, 64, 67, 0.08);
 }
 
-#this:active {
+.this:active {
   background-color: rgba(60, 64, 67, 0.12);
 }
 
-#this:focus-visible {
+.this:focus-visible {
   outline: none;
   border: 1px solid rgba(0,0,0,0.6);
 }

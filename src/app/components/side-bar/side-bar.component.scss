@@ -4,7 +4,7 @@
   margin-top: 8px;
 }
 
-#this {
+.this {
   @include mixins.flex();
   flex-direction: column;
   transition: padding-left 0.15s cubic-bezier(0.4,0.0,0.2,1),
@@ -14,7 +14,7 @@
   height: 100%;
 }
 
-#this.collapsed {
+.this.collapsed {
   width: 72px;
 }
 

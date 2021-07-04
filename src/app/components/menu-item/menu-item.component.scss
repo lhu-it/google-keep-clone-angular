@@ -1,6 +1,6 @@
 @use '../../styles/mixins';
 
-#this {
+.this {
   @include mixins.flex(false, true);
   padding-left: 12px;
   height: 48px;
@@ -13,22 +13,22 @@
   border: 1px solid transparent;
 }
 
-#this.collapsed {
+.this.collapsed {
   margin-left: 12px;
   padding-left: 0px;
   margin-right: 12px;
   border-radius: 24px 24px 24px 24px;
 }
 
-#this:hover {
+.this:hover {
   background-color: #f1f3f4;
 }
 
-#this.active {
+.this.active {
   background-color: #feefc3;
 }
 
-#this:focus-visible {
+.this:focus-visible {
   outline: none;
   border: 1px solid rgba(0,0,0,0.6);
 }
